@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phantom-User — Username Generator</title>
+  <meta name="description" content="Generate clean, pronounceable, platform-ready usernames that look intentional — not like your first choice was taken." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👻</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="ghost-bg"></canvas>
+
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">👻</span>
+        <span class="logo-text">Phantom<span class="logo-accent">User</span></span>
+      </div>
+      <p class="tagline">Clean usernames that look intentional — not like your first choice was taken.</p>
+    </header>
+
+    <!-- Controls -->
+    <section class="controls">
+      <div class="control-group">
+        <label for="seed-input">Seed Word <span class="optional">(optional)</span></label>
+        <input
+          type="text"
+          id="seed-input"
+          placeholder="e.g. shadow, nova, pixel..."
+          maxlength="20"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+
+      <div class="control-row">
+        <div class="control-group">
+          <label for="vibe-select">Vibe</label>
+          <select id="vibe-select">
+            <option value="any">Any</option>
+            <option value="soft">Soft & Smooth</option>
+            <option value="sharp">Sharp & Plosive</option>
+            <option value="mythic">Mythic & Grand</option>
+            <option value="techy">Techy & Modern</option>
+            <option value="nature">Nature & Organic</option>
+            <option value="dark">Dark & Edgy</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label for="case-select">Style</label>
+          <select id="case-select">
+            <option value="PascalCase">PascalCase</option>
+            <option value="lowercase">lowercase</option>
+            <option value="UPPERCASE">UPPERCASE</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label for="length-select">Length</label>
+          <select id="length-select">
+            <option value="any">Any</option>
+            <option value="short">Short (≤10)</option>
+            <option value="medium">Medium (11-15)</option>
+            <option value="long">Long (16+)</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="generate-btn" class="generate-btn">
+        <span class="btn-icon">⚡</span>
+        <span class="btn-text">Generate Usernames</span>
+      </button>
+    </section>
+
+    <!-- Results -->
+    <section class="results" id="results">
+      <div class="results-header">
+        <h2>Your Phantom Names</h2>
+        <button id="regenerate-btn" class="regen-btn" title="Regenerate">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        </button>
+      </div>
+      <div class="names-grid" id="names-grid"></div>
+      <div class="results-footer">
+        <p class="hint">Click any name to copy it</p>
+      </div>
+    </section>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">Copied!</div>
+
+    <!-- Rules -->
+    <section class="rules-section">
+      <h2>The Phantom Rules</h2>
+      <div class="rules-grid">
+        <div class="rule-card">
+          <span class="rule-icon">🎯</span>
+          <h3>Pronounceable</h3>
+          <p>Every name rolls off the tongue. No mangled consonant clusters or unreadable letter soup.</p>
+        </div>
+        <div class="rule-card">
+          <span class="rule-icon">✨</span>
+          <h3>Clean</h3>
+          <p>No numbers, no underscores, no letter-to-symbol swaps. Just pure, intentional words.</p>
+        </div>
+        <div class="rule-card">
+          <span class="rule-icon">🔍</span>
+          <h3>Unique</h3>
+          <p>Built to be available across platforms. Distinctive enough that nobody else has it.</p>
+        </div>
+        <div class="rule-card">
+          <span class="rule-icon">🧠</span>
+          <h3>Purposeful</h3>
+          <p>Looks like a name you chose — not a fallback after 47 "taken" attempts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Built with 👻 by <a href="https://github.com/mrosadevs" target="_blank" rel="noopener">@mrosadevs</a></p>
+    </footer>
+  </div>
+
+  <script src="generator.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
