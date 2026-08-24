@@ -74,10 +74,10 @@ Phantom-User enforces these username principles on every single generation:
 
 ```bash
 # Clone the repo
-git clone https://github.com/mrosadevs/a-website-called-phantom-user.git
+git clone https://github.com/mrosadevs/Phantom-User.git
 
 # Navigate to the project
-cd a-website-called-phantom-user
+cd Phantom-User
 
 # Open in your browser
 open index.html
