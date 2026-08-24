@@ -4,7 +4,7 @@
 
 ### ⚡ Generate clean, pronounceable usernames that look intentional — not like your first choice was taken.
 
-[![Live Site](https://img.shields.io/badge/Live_Site-Phantom--User-7c5cfc?style=for-the-badge&logo=github&logoColor=white)](https://mrosadevs.github.io/a-website-called-phantom-user/)
+[![Live Site](https://img.shields.io/badge/Live_Site-Phantom--User-7c5cfc?style=for-the-badge&logo=github&logoColor=white)](https://mrosadevs.github.io/Phantom-User/)
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)](#)
